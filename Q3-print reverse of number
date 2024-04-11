@@ -1,0 +1,37 @@
+<?php
+
+function rev($num){
+
+    $newnum= strrev(strval($num));
+    $new2=intval($newnum);
+    return $new2;
+}
+$val=123;
+$sv1=rev($val);
+echo "Real Value: $val";
+echo "Reverse Number; $sv1";
+?>
+/////////or//////
+
+
+<?php
+
+function reverse($num)
+{
+    $rem=0;
+    while ($num !=0)
+    {
+        $dig=$num %10;
+        $rem= $rem *10 + $dig;
+        $num=(int)($num /10);
+    }
+    return $rem;
+}
+
+$ans=123456;
+$ans1=reverse($ans);
+
+echo "Original Value: $ans";
+echo "Reverse Vlue: $ans1";
+
+?>
