@@ -1,0 +1,6 @@
+<?php
+echo "absolute:".abs(-7);
+echo "square root:".sqrt(16);
+echo "round up:".ceil(3.3);
+echo "round down:".floor(3.3);
+?>
