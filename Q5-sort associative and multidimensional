@@ -1,0 +1,25 @@
+<?php
+
+$a1 = array(1 => "Sujal", 2 => "Shubham", 3 => "Atharva");
+// Sorting by values and maintaining key association
+asort($a1);
+echo "Sorted by value:\n";
+print_r($a1);
+echo "<br>";
+// Resetting array to original order for demonstration
+$a1 = array(1 => "Sujal", 2 => "Shubham", 3 => "Atharva");
+// Sorting by keys
+ksort($a1);
+echo "Sorted by key:\n";
+print_r($a1);
+$arr1 = array(
+    array("name" => "sujal", 'roll' => '25'),
+    array("name" => "shubham", 'roll' => '28'),
+    array("name" => "athv", 'roll' => '30')
+);
+usort($arr1, function($a, $b) {
+    return strcmp($a['name'], $b['name']);
+});
+echo '<br>';
+print_r($arr1);
+?>
