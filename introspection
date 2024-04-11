@@ -1,0 +1,27 @@
+<?php
+
+class demo{
+    public function demo1(){
+        return true;
+    }
+    public function demo2(){
+        return true;}
+    
+    public function demo3(){
+        return true;    
+    }
+}
+
+if(class_exists("demo")){
+    echo"class present<br>";
+}
+else{
+    echo "class nor presenr<br>";
+}
+$p = new demo();
+echo"The classs name ". get_class($p)."<br>";
+
+$methods = get_class_methods(new demo());
+foreach($methods as $met){
+    echo "$met <br>";
+}
