@@ -1,0 +1,7 @@
+<?php
+echo "Current Date: " .date('Y-m-d')."<br>";
+echo "Current Time: ". date('H:i:s')."<br>";
+echo "Tomorrow's Date: " .  date("Y-m-d", strtotime("+1 day")) . "<br>";
+echo "Formatted Date: " . date("F / j / Y") . "<br>";
+echo "Timestamp for 2024-04-18: " . strtotime("2024-04-18") . "<br>";
+?>
