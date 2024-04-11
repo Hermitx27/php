@@ -1,0 +1,11 @@
+<?php
+session_start();
+$_SESSION["name"] = "RS";
+$_SESSION["num"] = 35;
+echo "Session variables are:<br>";
+echo "Name: " . $_SESSION["name"] . "<br>";
+echo "Number: " . $_SESSION["num"] . "<br>";
+session_unset();
+session_destroy();
+echo "Name: " . $_SESSION["name"] . "<br>";
+?>
