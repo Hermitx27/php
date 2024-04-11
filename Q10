@@ -1,0 +1,16 @@
+<?php
+// Check if the 'user' cookie is set
+if (isset($_COOKIE['user'])) {
+    echo "Cookie 'user' is set!<br>";
+    echo "Value is: " . $_COOKIE['user'] . "<br>";
+} else {
+    // If 'user' cookie is not set, create and set the cookie
+    setcookie('user', 'rohit', time() + (86400 * 30), "/"); // Cookie valid for 30 days
+    echo "Cookie 'user' is set!<br>";
+    echo "Value is: Athrv <br>";
+}
+
+// Delete the 'user' cookie
+setcookie('user', '', time() - 3600); 
+echo "Cookie 'user' is deleted.<br>";
+?>
