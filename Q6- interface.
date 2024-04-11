@@ -1,0 +1,27 @@
+<?php
+//Write PHP program based on interface.
+interface A{
+    public function Ashow();
+}
+interface B{
+    public function Bshow();
+}
+class C implements A  , B
+{
+    public function Ashow(){
+        echo "This is interface A FUntion <br>";
+    }
+
+    public function Bshow(){
+        echo "This is function of interface B <br>";
+    }
+
+    public function Cshow(){
+        echo "This is function of class C";
+    }
+}
+$obj1 = new C();
+$obj1->Ashow();
+$obj1->Bshow();
+$obj1->Cshow();
+?>
